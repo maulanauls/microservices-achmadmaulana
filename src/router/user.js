@@ -11,6 +11,19 @@ clientDB.connect((err, db) => {
     console.error("error occurred while connecting to DB!");
   } else {
     console.log("database connection established successfully");
+    router.get("/", async function (req, res, next) {
+      try {
+        let response = await middleware.payloadAuthorization(req, res);
+        if (response.status) {
+          response = await controller.getByAll(req, db, res);
+        }
+        res.json(http.responseHttp(200, response, false));
+      } catch (error) {
+        console.log(error);
+        res.status(500);
+        res.json(http.responseHttp(500, error, false));
+      }
+    });
     router.get("/:id", async function (req, res, next) {
       try {
         let response = await middleware.payloadAuthorization(req, res);

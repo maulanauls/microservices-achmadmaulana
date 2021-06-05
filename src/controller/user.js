@@ -5,6 +5,44 @@ let http = require("../connection/http");
 const { parse_require } = require("../helper/parse_require");
 var ObjectId = require("mongodb").ObjectID;
 
+async function getByAll(req, clientDB, res) {
+  let response = {
+    status: true,
+    result: {},
+    error: {},
+  };
+  try {
+    const collection = clientDB.db("achmadmaulana").collection("user");
+    let findByAll = await new Promise((resolve) =>
+      collection
+        .find()
+        .toArray()
+        .then((result) => {
+          return resolve(result);
+        })
+        .catch((error) => console.error(error))
+    );
+    let countBy = await new Promise((resolve) =>
+      collection
+        .countDocuments()
+        .then((result) => {
+          return resolve(result);
+        })
+        .catch((error) => console.error(error))
+    );
+    response.status = true;
+    response.result = {
+      data: findByAll,
+      total: countBy,
+    };
+    return response;
+  } catch (err) {
+    console.log(err);
+    res.status(500);
+    res.json(http.responseHttp(500, err, false));
+  }
+}
+
 async function getById(req, clientDB, res) {
   let body = req.params;
   console.log(body.id);
@@ -254,6 +292,7 @@ async function updateById(req, clientDB, res) {
 }
 
 module.exports = {
+  getByAll,
   getById,
   getByAccountNumber,
   getByIdentityNumber,
