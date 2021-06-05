@@ -1,6 +1,9 @@
 # microservices-achmadmaulana
 BTPN jenius exam testing
 
+  - * postman collection 
+    - microservices_achmadmaulana.postman_collection.json -> load this file for get collection
+
   - user
   * http://achmad-maulana.levlet.io/api/v1/user
 
