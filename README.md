@@ -4,6 +4,9 @@ BTPN jenius exam testing
   - * postman collection 
     - microservices_achmadmaulana.postman_collection.json -> load this file for get collection
 
+  - generate token
+    http://achmad-maulana.levlet.io/api/v1/generate-token
+
   - user
   * http://achmad-maulana.levlet.io/api/v1/user
 
@@ -20,10 +23,10 @@ BTPN jenius exam testing
     params: 
       - id: id value
     body: 
-      - userName * mandatory required
-      - accountNumber * mandatory required
-      - emailAddress * mandatory required
-      - identityNumber * mandatory required
+      - userName 
+      - accountNumber 
+      - emailAddress 
+      - identityNumber 
 
   - delete 
   * http://achmad-maulana.levlet.io/api/v1/user/delete/:id

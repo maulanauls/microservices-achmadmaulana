@@ -245,6 +245,28 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "generateToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://achmad-maulana.levlet.io/api/v1/generate-token",
+					"protocol": "http",
+					"host": [
+						"achmad-maulana",
+						"levlet",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"generate-token"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
