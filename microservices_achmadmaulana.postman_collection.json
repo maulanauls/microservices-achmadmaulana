@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "3874bf6b-1466-4bb3-bdf3-2009bee14dfb",
+		"name": "microservices_achmadmaulana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getByAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJiOGIwNDZjOGQzODAwMTZjMWViMTciLCJ1c2VyTmFtZSI6ImFjaG1hZG1hdWxhbmEiLCJwYXNzd29yZCI6IiQyYSQwOCRYQVN1UVhUV2RsSU84OU9qc3VxNFhlYnZMZzQ0RUU2SVJ1TkUvd2M0Y3FjTmRtdXJLaXdRdSIsImlhdCI6MTYyMjkwODExMSwiZXhwIjoxNjIzMzQwMTExfQ._ga6tX9O_etv0rbEU5hLUtthm54yGQfUivS_R6evOFs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://achmad-maulana.levlet.io/api/v1/user",
+					"protocol": "http",
+					"host": [
+						"achmad-maulana",
+						"levlet",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJiOGIwNDZjOGQzODAwMTZjMWViMTciLCJ1c2VyTmFtZSI6ImFjaG1hZG1hdWxhbmEiLCJwYXNzd29yZCI6IiQyYSQwOCRYQVN1UVhUV2RsSU84OU9qc3VxNFhlYnZMZzQ0RUU2SVJ1TkUvd2M0Y3FjTmRtdXJLaXdRdSIsImlhdCI6MTYyMjkwODExMSwiZXhwIjoxNjIzMzQwMTExfQ._ga6tX9O_etv0rbEU5hLUtthm54yGQfUivS_R6evOFs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://achmad-maulana.levlet.io/api/v1/user/60bb593640e7871546846278",
+					"protocol": "http",
+					"host": [
+						"achmad-maulana",
+						"levlet",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"60bb593640e7871546846278"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByAccountNumber",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJiOGIwNDZjOGQzODAwMTZjMWViMTciLCJ1c2VyTmFtZSI6ImFjaG1hZG1hdWxhbmEiLCJwYXNzd29yZCI6IiQyYSQwOCRYQVN1UVhUV2RsSU84OU9qc3VxNFhlYnZMZzQ0RUU2SVJ1TkUvd2M0Y3FjTmRtdXJLaXdRdSIsImlhdCI6MTYyMjkwODExMSwiZXhwIjoxNjIzMzQwMTExfQ._ga6tX9O_etv0rbEU5hLUtthm54yGQfUivS_R6evOFs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://achmad-maulana.levlet.io/api/v1/user/account-number/60bb593640e7871546846278",
+					"protocol": "http",
+					"host": [
+						"achmad-maulana",
+						"levlet",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"account-number",
+						"60bb593640e7871546846278"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByIdentityNumber",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJiOGIwNDZjOGQzODAwMTZjMWViMTciLCJ1c2VyTmFtZSI6ImFjaG1hZG1hdWxhbmEiLCJwYXNzd29yZCI6IiQyYSQwOCRYQVN1UVhUV2RsSU84OU9qc3VxNFhlYnZMZzQ0RUU2SVJ1TkUvd2M0Y3FjTmRtdXJLaXdRdSIsImlhdCI6MTYyMjkwODExMSwiZXhwIjoxNjIzMzQwMTExfQ._ga6tX9O_etv0rbEU5hLUtthm54yGQfUivS_R6evOFs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://achmad-maulana.levlet.io/api/v1/user/identity-number/60bb593640e7871546846278",
+					"protocol": "http",
+					"host": [
+						"achmad-maulana",
+						"levlet",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"identity-number",
+						"60bb593640e7871546846278"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJiOGIwNDZjOGQzODAwMTZjMWViMTciLCJ1c2VyTmFtZSI6ImFjaG1hZG1hdWxhbmEiLCJwYXNzd29yZCI6IiQyYSQwOCRYQVN1UVhUV2RsSU84OU9qc3VxNFhlYnZMZzQ0RUU2SVJ1TkUvd2M0Y3FjTmRtdXJLaXdRdSIsImlhdCI6MTYyMjkwODExMSwiZXhwIjoxNjIzMzQwMTExfQ._ga6tX9O_etv0rbEU5hLUtthm54yGQfUivS_R6evOFs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "accountNumber",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "emailAddress",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "identityNumber",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://achmad-maulana.levlet.io/api/v1/register/user",
+					"protocol": "http",
+					"host": [
+						"achmad-maulana",
+						"levlet",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"register",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJiOGIwNDZjOGQzODAwMTZjMWViMTciLCJ1c2VyTmFtZSI6ImFjaG1hZG1hdWxhbmEiLCJwYXNzd29yZCI6IiQyYSQwOCRYQVN1UVhUV2RsSU84OU9qc3VxNFhlYnZMZzQ0RUU2SVJ1TkUvd2M0Y3FjTmRtdXJLaXdRdSIsImlhdCI6MTYyMjkwODExMSwiZXhwIjoxNjIzMzQwMTExfQ._ga6tX9O_etv0rbEU5hLUtthm54yGQfUivS_R6evOFs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://achmad-maulana.levlet.io/api/v1/user/update/60bb593640e7871546846278",
+					"protocol": "http",
+					"host": [
+						"achmad-maulana",
+						"levlet",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"update",
+						"60bb593640e7871546846278"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJiOGIwNDZjOGQzODAwMTZjMWViMTciLCJ1c2VyTmFtZSI6ImFjaG1hZG1hdWxhbmEiLCJwYXNzd29yZCI6IiQyYSQwOCRYQVN1UVhUV2RsSU84OU9qc3VxNFhlYnZMZzQ0RUU2SVJ1TkUvd2M0Y3FjTmRtdXJLaXdRdSIsImlhdCI6MTYyMjkwODExMSwiZXhwIjoxNjIzMzQwMTExfQ._ga6tX9O_etv0rbEU5hLUtthm54yGQfUivS_R6evOFs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://achmad-maulana.levlet.io/api/v1/user/remove/60bb593640e7871546846278",
+					"protocol": "http",
+					"host": [
+						"achmad-maulana",
+						"levlet",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"remove",
+						"60bb593640e7871546846278"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
