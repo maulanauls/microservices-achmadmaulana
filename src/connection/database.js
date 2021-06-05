@@ -4,8 +4,7 @@ const path_db =
 
 const client = new MongoClient(path_db, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
+  useUnifiedTopology: true
 });
 
 module.exports = client;
