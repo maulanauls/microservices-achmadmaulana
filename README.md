@@ -1,6 +1,13 @@
 # microservices-achmadmaulana
 BTPN jenius exam testing
 
+  - git clone first
+  - goto the directory after git clone the source code
+  - try to install dependencies - npm install
+
+  - for nodemon dev - npm run dev
+  - for start - npm run start
+
   - * postman collection 
     - microservices_achmadmaulana.postman_collection.json -> load this file for get collection
 
