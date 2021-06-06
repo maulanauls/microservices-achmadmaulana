@@ -34,8 +34,6 @@ async function userCreate(req, res) {
     },
   };
   const error = parse_require(schema);
-  response.status = false;
-  response.error = error ? error : {};
 
   if (!error) {
     try {
@@ -68,6 +66,9 @@ async function userCreate(req, res) {
       res.status(500);
       res.json(http.responseHttp(500, err, false));
     }
+  } else {
+    response.status = false;
+    response.error = error ? error : {};
   }
 
   return response
