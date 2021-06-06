@@ -30,9 +30,19 @@ async function getByAll(req, clientDB, res) {
         })
         .catch((error) => console.error(error))
     );
+    let make_array = [];
+    findByAll.forEach((el) => {
+      make_array.push({
+        id: el._id,
+        userName: el.userName,
+        accountNumber: el.accountNumber,
+        identityNumber: el.identityNumber,
+        emailAddress: el.emailAddress,
+      });
+    });
     response.status = true;
     response.result = {
-      data: findByAll,
+      data: make_array,
       total: countBy,
     };
     return response;
