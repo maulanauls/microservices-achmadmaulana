@@ -167,7 +167,7 @@ async function getByIdentityNumber(req, clientDB, res) {
       const collection = clientDB.db("achmadmaulana").collection("user");
       let findByIdentityNumber = await new Promise((resolve) =>
         collection
-          .findOne({ IdentityNumber: body.IdentityNumber })
+          .findOne({ identityNumber: body.IdentityNumber })
           .then((result) => {
             return resolve(result);
           })
